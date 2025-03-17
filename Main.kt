@@ -2,14 +2,24 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    var n1: Int
 
-    n1 = 30
+    var n1: Double
 
-    while (n1 > -1) {
-        println("Falta $n1 para explodir!!")
-        n1 = n1 - 1
+    var n2: Double
 
-    print("EXPLOSÃO")
-}
+    var resul: Double
+
+    println("Digite o primeiro número: ")
+    n1 = readln().toDouble()
+    println("Digite o segundo número(não pode ser ser menor ou igual a 0: )")
+    n2 = readln().toDouble()
+
+    while(n2 <= 0){
+        println ("O segundo número não pode ser menor ou igual a 0. Digite novamente: ")
+        n2 = readln().toDouble()
+        resul = n1 /n2
+        print("O resultado da divisão é: $resul")
+    }
+    resul = n1 /n2
+    print("O resultado da divisão é: $resul")
 }
